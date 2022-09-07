@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<h1>Hello World!</h1>
+<p id="code">Color Code = #ffffff</p>
+<button type="button" onclick="myFunction()">Set background color</button>
+
+<script>
+function myFunction() {
+var char="abcdef0123456789"  
+  var color=""
+  var allColor=[]
+  for(let i=0;i<6;i++){
+    var randomColor=Math.floor(Math.random()*16) 
+    color+=char.substring(randomColor,randomColor+1)
+    }
+  document.body.style.backgroundColor = "#"+color;
+</script>
+</body>
+</html>
